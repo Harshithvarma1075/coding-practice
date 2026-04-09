@@ -1,0 +1,8 @@
+print("*******************")
+print("MY name is kartheek")
+print("I am studying in Raghu Institute of Technology")
+print("*-*-*-*-*-*-*-*-*-*-*-*-*")
+print("My hobbies are listening music, reading books and playing video games")
+print("This is my first file which i will be posting in git")
+print("🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩")
+print("*_*_*_*_*_*_*_*_*_")
