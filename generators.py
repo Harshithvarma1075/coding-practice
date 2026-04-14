@@ -29,4 +29,12 @@ def power_gen(n):
 for num in power_gen(10):
     print(num)
 '''
-':::::::::::::::::::::::::::::::::::::::::::::::::
+':::::::::::::::::::::::::::::::::::::::::::::::::'
+import time
+def countdown(n):
+    while n>0:
+        yield n
+        n -= 1
+for u in countdown(10):
+    print(u)
+    time.sleep(1)

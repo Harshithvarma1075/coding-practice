@@ -1,4 +1,4 @@
-hdfc_details = {"name": "varma", "pin": "1075", "balance": 12000}
+hdfc_details = {"name": "varma", "pin": "1075", "balance": 12000,"transaction_history":[ ]}
 
 print("welcome to hdfc bank")
 print("enter the atm card")
@@ -9,12 +9,13 @@ if len(hdfc_pin) == 4:
     if hdfc_pin == hdfc_details["pin"]:
         
         while True:
-            user_choice = int(input("Enter \n1.withdraw: \n2.deposite : \n3.pin change \n4.exit: "))
+            user_choice = int(input("Enter \n1.withdraw: \n2.deposite : \n3.pin change: \n4.exit: \n5.transaction history: "))
 
             if user_choice == 1:
                 amount_w = int(input("Enter the amount you want to withdraw: "))
                 if amount_w <= hdfc_details['balance']:
                     hdfc_details['balance'] -= amount_w
+                    hdfc_details['transaction_history'].append(f"withdraw: {amount_w}")
                     print(f"money withdrawn ,your balance is {hdfc_details['balance']}")
                 else:
                     print("insufficient funds")
@@ -23,6 +24,7 @@ if len(hdfc_pin) == 4:
                 depositemoney = int(input("enter the amount you want to deposite: "))
                 if depositemoney % 100 == 0 and depositemoney >= 5000:
                     hdfc_details['balance'] += depositemoney
+                    hdfc_details['transaction_history'].append(f"deposited:{depositemoney}")
                     print(f"you have deposited {depositemoney} so the balance is {hdfc_details['balance']}")
                 else:
                     print("invalid deposit (must be multiple of 100 and >= 5000)")
@@ -42,6 +44,9 @@ if len(hdfc_pin) == 4:
             elif user_choice == 4:
                 print("thank you for associating with hdfc")
                 break
+            elif user_choice == 5:
+                print(hdfc_details['transaction_history'])
+                
 
             else:
                 print("invalid choice , try again")

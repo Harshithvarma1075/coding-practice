@@ -8,13 +8,13 @@ sum_num(num1,num2)   'in calling function the number of arguments should match w
 
 '''
 '::::::::::::::::::::::::::::::::::::::::::::::::::::::::::DEFAULT ARGUMENTS::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::'
-''' it will take the default valuses from the arguments
+'it will take the default valuses from the arguments''''
 name="varma"
 def sum_num(name):
     print(name)
-sum_num(name="harshith")
-sum_num(name="rama")   'these are used for reusability , if we use the calling fuction after n number of lines still we get the output '
-'''
+sum_num(name)'''
+'sum_num(name="rama")   these are used for reusability , if we use the calling fuction after n number of lines still we get the output '
+
 '''
 a=127
 def even(a):
@@ -25,25 +25,28 @@ def even(a):
 even(a= 178)
 '''
 
-'''
+
 def prime(num,count):
     for i in range(1,num+1):
         if num%i == 0:
             count += 1
-    if count == 0:
+    if count == 2:
         print(f"{num} is a prime number")
     else:
         print(f"{num} is not a prime number")
 prime(num=1075,count=0)
-'''
+
 '''
 def any(num,num1,num2):
     print(f"num ={num} , num2={num2}, num1 ={num1}")
 any(num2=92,num=88,num1=134)
 '''
+'''
 def age(*years):
     print(years)
 age(18,32,55)
+
+'''
 
 
 
