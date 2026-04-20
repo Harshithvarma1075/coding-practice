@@ -43,6 +43,10 @@ items=["orange", "apple","harshith","varma"]
 sortted=sorted(items,key=len)
 print(sortted)
 '''
+'''
+name="harshith varma"
+print(name.title)
+'''
 #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::LIST METHODS::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;'
 '''
 number=[1,25,43,545,66,43,4]
@@ -63,7 +67,9 @@ print(data)
 data=[12,"harshith",9999,"varma"]
 print(data.index("harshith"))
 '''
+'''
 data =["varma","ram","krishna"]  #here the list get sorted on the bases of alphabetical order
 data.sort()
 print(data)
+'''
 
