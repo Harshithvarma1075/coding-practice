@@ -57,14 +57,14 @@ class child(parent):
 hi=child()
 hi.display()
 '''
-
+'''
 class Bike:
     def display(self):
         print("this is the car")
         
 class Engine:
     def display(Self):
-        print("this is the engine")
+        print("this is the engine")      #id method names are same then we get the latest one 
         
 class wheel(Bike,Engine):
     def display(self):
@@ -74,7 +74,7 @@ class wheel(Bike,Engine):
 
 zui = wheel()
 zui.display()
-
+'''
 
 
 
