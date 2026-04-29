@@ -111,14 +111,14 @@ print(r)
 import datetime as dt
 hi= dt.datetime.now()
 print(hi)
-'''
+
 import datetime as dt
 today=dt.date.today()
 print(today.strftime("%d-%m-%Y"))
 print(today.strftime("%A"))
 print(today.strftime("%B"))
 
-
+'''
 
 
 
