@@ -68,7 +68,7 @@ class Engine:
         
 class wheel(Bike,Engine):
     def display(self):
-        #super().display()
+        super().display()
         print("this is the wheel")
         
 
